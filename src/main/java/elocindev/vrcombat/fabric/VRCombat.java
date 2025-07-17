@@ -18,11 +18,5 @@ public class VRCombat implements ClientModInitializer {
 	public void onInitializeClient() {
 		CONFIG = ConfigBuilder.loadConfig();
 		LOGGER.info("VRCombat Config Initialized!");
-
-		if (VRState.vrInitialized) {
-			LOGGER.info("VRCombat detected Vivecraft VR Mode, may be hotswapped later!");
-		} else {
-			LOGGER.info("VRCombat detected Vivecraft NONVR Mode, may be hotswapped later!");
-		}
 	}
 }
